@@ -1,11 +1,14 @@
+#include <stdio.h>
+
 int main() {
- 
   float num1, num2, result;
   int choice;
 
+  // Solicitar el primer número
   printf("Ingrese el primer número: ");
   scanf("%f", &num1);
 
+  // Mostrar el menú de operaciones
   printf("\nSeleccione la operación:\n");
   printf("1. Suma\n");
   printf("2. Resta\n");
@@ -14,9 +17,11 @@ int main() {
   printf("Ingrese su elección: ");
   scanf("%d", &choice);
 
+  // Solicitar el segundo número
   printf("\nIngrese el segundo número: ");
   scanf("%f", &num2);
 
+  // Realizar la operación según la elección
   switch (choice) {
     case 1:
       result = num1 + num2;
@@ -39,6 +44,7 @@ int main() {
       return 1;
   }
 
+  // Mostrar el resultado
   printf("\nEl resultado es: %.2f\n", result);
 
   return 0;
